@@ -31,7 +31,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM list ORDER BY id DESC"); // using
 		echo "<tr>";
 		echo "<td>".$res['title']."</td>";
 		echo "<td>".date($res['date'])."</td>";	
-		echo "<td><a href=\"view.php?id=$res[id]\">View</a> | <a href=\"edit.php?id=$res[id]\">Edit</a> | <a href=\"delete.php?id=$res[id]\" onClick=\"return confirm('Are you sure you want to delete?')\">Delete</a></td>";		
+		echo "<td><a href=\"view.php?id=$res[id]\" class=\"btn btn-info btn-sm\"><span class=\"glyphicon glyphicon-info-sign\"></span> View</a> | <a href=\"edit.php?id=$res[id]\" class=\"btn btn-info btn-sm\"><span class=\"glyphicon glyphicon-edit\"></span> Edit</a> | <a href=\"delete.php?id=$res[id]\" class=\"btn btn-info btn-sm\" onClick=\"return confirm('Are you sure you want to delete?')\"><span class=\"glyphicon glyphicon-trash\"></span> Delete</a></td>";		
 	}
 	?>
 	</table>
