@@ -23,3 +23,21 @@ body {
     padding: 8px;
     border: none;
 }
+
+.title {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.description {
+	text-align: left;
+	font-weight: 1.2em;
+}
+
+.date {
+	text-align: right;
+}
+
+.butt {
+	margin: auto;
+}
