@@ -15,9 +15,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM list ORDER BY id DESC"); // using
 		table, th, td {
 		    border: none;
 		}
-		th, td {
-		    padding: 8px;
-		}
+		
 	</style>
 </head>
 
@@ -26,7 +24,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM list ORDER BY id DESC"); // using
 
 <div class="container">
 	<div class="jumbotron">
-	<table style="width: 100%; margin: 0px auto;">
+	<table style="width: 100%; margin: 0px auto;" class="table">
 
 	<tr>
 		<th>Title</th>
