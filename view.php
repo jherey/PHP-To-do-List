@@ -1,6 +1,6 @@
 <?php
-include_once("db.php");
-include_once("header.html");
+	include_once("db.php");
+	include_once("header.html");
 ?>
 
 <html>
@@ -17,7 +17,6 @@ include_once("header.html");
 			<?php
 				//getting id from url
 				$id = $_GET['id'];
-				//var_dump($id);
 				//selecting data associated with this particular id
 				$result = mysqli_query($mysqli, "SELECT * FROM list WHERE id=$id");
 
@@ -40,5 +39,5 @@ include_once("header.html");
 
 
 <?php
-include_once("footer.html");
+	include_once("footer.html");
 ?>

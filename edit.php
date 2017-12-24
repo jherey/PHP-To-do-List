@@ -1,11 +1,9 @@
 <?php
 // including the database connection file
-include_once("db.php");
-include_once("header.html");
+	include_once("db.php");
+	include_once("header.html");
 
-if(isset($_POST['update']))
-{	
-
+if(isset($_POST['update'])) {	
 	$id = mysqli_real_escape_string($mysqli, $_POST['id']);
 	
 	$title = mysqli_real_escape_string($mysqli, $_POST['title']);
@@ -29,12 +27,12 @@ if(isset($_POST['update']))
 	} else {	
 		//updating the table
 		$result = mysqli_query($mysqli, "UPDATE list SET title='$title',date='$date',description='$description' WHERE id=$id");
-		
 		//redirectig to the display page. In our case, it is index.php
 		header("Location: index.php");
 	}
 }
 ?>
+
 <?php
 //getting id from url
 $id = $_GET['id'];
@@ -49,6 +47,7 @@ while($res = mysqli_fetch_array($result))
 	$description = $res['description'];
 }
 ?>
+
 <html>
 <head>	
 	<title>Edit Data</title>
@@ -80,5 +79,5 @@ while($res = mysqli_fetch_array($result))
 	</form>
 
 <?php
-include_once("footer.html");
+	include_once("footer.html");
 ?>

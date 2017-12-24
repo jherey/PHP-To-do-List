@@ -30,7 +30,6 @@
 		$result = mysqli_query($mysqli, "INSERT INTO `list` (`id`, `title`, `date`, `description`) VALUES (NULL, '{$_POST["title"]}', '{$_POST["date"]}', '{$_POST["description"]}')");
 		//Get the last user_id
 		$last_id = $mysqli->insert_id;
-		//var_dump($last_id);
 		//redirectig to the view page
 		header("Location: view.php?id=$last_id");
 	}
@@ -68,5 +67,5 @@
 	</form>
 
 <?php
-include_once("footer.html");
+	include_once("footer.html");
 ?>
