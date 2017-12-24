@@ -59,7 +59,7 @@ while($res = mysqli_fetch_array($result))
 	<br/><br/>
 	
 	<form name="form1" method="POST" action="edit.php">
-		<table class="table">
+		<table class="table" style="margin-left: 10px;">
 			<tr> 
 				<td>Title</td>
 				<td><input type="text" name="title" value="<?php echo $title;?>"></td>
@@ -70,7 +70,7 @@ while($res = mysqli_fetch_array($result))
 			</tr>
 			<tr> 
 				<td>Description</td>
-				<td><input type="text" name="description" value="<?php echo $description;?>"></td>
+				<td><textarea name="description" rows="8" cols="30"><?php echo $description;?></textarea></td>
 			</tr>
 			<tr>
 				<td><input type="hidden" name="id" value=<?php echo $_GET['id'];?>></td>
@@ -78,5 +78,7 @@ while($res = mysqli_fetch_array($result))
 			</tr>
 		</table>
 	</form>
-</body>
-</html>
+
+<?php
+include_once("footer.html");
+?>

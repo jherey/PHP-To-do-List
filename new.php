@@ -43,7 +43,7 @@
 </head>
 
 <body>
-	<a href="index.php" style="margin-left: 10px;">Home</a>
+	<a href="index.php" style="margin-left: 10px; font-size: 1.3em;">Home</a>
 	<br/><br/>
 
 	<form action="new.php" method="POST" name="form1">
@@ -58,7 +58,7 @@
 			</tr>
 			<tr> 
 				<td>Description</td>
-				<td><input type="text" name="description"></td>
+				<td><textarea name="description" rows="8" cols="30"></textarea></td>
 			</tr>
 			<tr> 
 				<td></td>
