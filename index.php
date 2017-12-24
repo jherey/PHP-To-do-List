@@ -24,22 +24,25 @@ $result = mysqli_query($mysqli, "SELECT * FROM list ORDER BY id DESC"); // using
 
 <div class="container">
 	<div class="jumbotron">
-	<table style="width: 100%; margin: 0px auto;" class="table">
-
+	<table style="width: 100%;" class="table">
+	<thead>
 	<tr>
-		<th>Title</th>
-		<th>Date</th>
-		<th></th>
+		<th scope="col">Title</th>
+		<th scope="col">Date</th>
+		<th scope="col"></th>
 	</tr>
+	</thead>
+	<tbody>
 	<?php 
 	//while($res = mysql_fetch_array($result)) { // mysql_fetch_array is deprecated, we need to use mysqli_fetch_array 
 	while($res = mysqli_fetch_array($result)) { 		
-		echo "<tr>";
+		echo "<tr scope=\"row\">";
 		echo "<td>".$res['title']."</td>";
 		echo "<td>".date($res['date'])."</td>";	
-		echo "<td><a href=\"view.php?id=$res[id]\" class=\"btn btn-success btn-sm\"><span class=\"glyphicon glyphicon-info-sign\"></span> View</a>  <a href=\"edit.php?id=$res[id]\" class=\"btn btn-info btn-sm\"><span class=\"glyphicon glyphicon-edit\"></span> Edit</a>  <a href=\"delete.php?id=$res[id]\" class=\"btn btn-danger btn-sm\" onClick=\"return confirm('Are you sure you want to delete?')\"><span class=\"glyphicon glyphicon-trash\"></span> Delete</a></td>";		
+		echo "<td><a href=\"view.php?id=$res[id]\" class=\"btn btn-success btn-md butt\"><span class=\"glyphicon glyphicon-info-sign\"></span> View</a>  <a href=\"edit.php?id=$res[id]\" class=\"btn btn-info btn-md butt\"><span class=\"glyphicon glyphicon-edit\"></span> Edit</a>  <a href=\"delete.php?id=$res[id]\" class=\"btn btn-danger btn-md butt\" onClick=\"return confirm('Are you sure you want to delete?')\"><span class=\"glyphicon glyphicon-trash\"></span> Delete</a></td>";		
 	}
 	?>
+	</tbody>
 	</table>
 	
 	</div>
