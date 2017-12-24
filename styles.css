@@ -18,3 +18,8 @@ body {
     color: white;
     text-align: center;
 }
+
+.table > th, td {
+    padding: 8px;
+    border: none;
+}
