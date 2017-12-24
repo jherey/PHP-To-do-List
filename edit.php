@@ -1,6 +1,7 @@
 <?php
 // including the database connection file
 include_once("db.php");
+include_once("header.html");
 
 if(isset($_POST['update']))
 {	
@@ -54,11 +55,11 @@ while($res = mysqli_fetch_array($result))
 </head>
 
 <body>
-	<a href="index.php">Home</a>
+	<a href="index.php" style="margin-left: 10px; font-size: 1.3em;">Home</a>
 	<br/><br/>
 	
 	<form name="form1" method="POST" action="edit.php">
-		<table border="0">
+		<table class="table">
 			<tr> 
 				<td>Title</td>
 				<td><input type="text" name="title" value="<?php echo $title;?>"></td>
@@ -73,7 +74,7 @@ while($res = mysqli_fetch_array($result))
 			</tr>
 			<tr>
 				<td><input type="hidden" name="id" value=<?php echo $_GET['id'];?>></td>
-				<td><input type="submit" name="update" value="Update"></td>
+				<td><input type="submit" class="btn-success btn-lg" style="border: none;" name="update" value="Update"></td>
 			</tr>
 		</table>
 	</form>
