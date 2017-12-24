@@ -29,7 +29,7 @@ include_once("header.html");
 					$description = $res['description'];
 				}
 
-				echo "<h2 class=\"title\">"."$title"."</h2>";
+				echo "<h2 style=\"font-weight: bold;\" class=\"title\">"."$title"."</h2>"."<hr>";
 				echo "<p class=\"description\">"."$description"."</p>";
 				echo "<p class=\"date\">"."$date"."</p>";
 
