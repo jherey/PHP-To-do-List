@@ -44,28 +44,31 @@
 <body>
 	<a href="index.php" style="margin-left: 10px; font-size: 1.3em;">Home</a>
 	<br/><br/>
-
-	<form action="new.php" method="POST" name="form1">
-		<table width="50%" style="margin-left: 10px;" class="table">
-			<tr> 
-				<td>Title</td>
-				<td><input type="text" name="title"></td>
-			</tr>
-			<tr> 
-				<td>Date</td>
-				<td><input type="date" name="date"></td>
-			</tr>
-			<tr> 
-				<td>Description</td>
-				<td><textarea name="description" rows="8" cols="30"></textarea></td>
-			</tr>
-			<tr> 
-				<td></td>
-				<td><input class="btn-success btn-lg" style="border: none;" type="Submit" name="Submit" value="Add"></td>
-			</tr>
-		</table>
-	</form>
-
+	<div>
+		
+			<form action="new.php" method="POST" name="form1">
+				<table width="30%" align="center" style="border: 1px solid black;">
+					<tr> 
+						<td>Title:</td>
+						<td><input type="text" name="title"></td>
+					</tr>
+					<tr> 
+						<td>Date:</td>
+						<td><input type="date" name="date"></td>
+					</tr>
+					<tr> 
+						<td>Description:</td>
+						<td><textarea name="description" rows="8" cols="30"></textarea></td>
+					</tr>
+					<tr> 
+						<td></td>
+						<td><input class="btn-success btn-lg" style="border: none;" type="Submit" name="Submit" value="Add"></td>
+					</tr>
+				</table>
+			</form>
+		
+	</div>
+	
 <?php
 	include_once("footer.html");
 ?>

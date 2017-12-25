@@ -4,6 +4,7 @@ body {
 	width: 100%;
 	min-height: 100%;
 }
+
 .navbar {
 	font-size: 1.3em;
 	border: none;
@@ -27,13 +28,16 @@ body {
 	table-layout: fixed;
 	width: 100%
 }
+
 .table tr {
 	border: 1px solid #ddd;
 	padding: .35em;
 }
+
 .table tr:nth-child(even) {
 	background: #f8f8f8;
 }
+
 .table th {
 	background: #999;
 	color: #fff;
@@ -41,11 +45,13 @@ body {
 	letter-spacing: .1em;
 	text-transform: uppercase;
 }
+
 .table td {
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
 }
+
 .table > th, td {
     padding: 8px;
     border: none;
@@ -68,4 +74,16 @@ body {
 .butt {
 	display: inline-block;
 	margin-right: 15px;
+}
+
+.new {
+	width: 50%;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+#line {
+	border: 5px solid black;
 }
