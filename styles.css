@@ -80,10 +80,6 @@ body {
 	width: 50%;
 }
 
-.bold {
-	font-weight: bold;
-}
-
-#line {
-	border: 5px solid black;
+.color {
+	background-color: #F0F3F4;
 }

@@ -58,17 +58,17 @@ while($res = mysqli_fetch_array($result))
 	<br/><br/>
 	
 	<form name="form1" method="POST" action="edit.php">
-		<table class="table" style="margin-left: 10px;">
+		<table class="color" width="30%" align="center" style="border: 1px solid black;">
 			<tr> 
-				<td>Title</td>
+				<td>Title:</td>
 				<td><input type="text" name="title" value="<?php echo $title;?>"></td>
 			</tr>
 			<tr> 
-				<td>Date</td>
+				<td>Date:</td>
 				<td><input type="date" name="date" value="<?php echo $date;?>"></td>
 			</tr>
 			<tr> 
-				<td>Description</td>
+				<td>Description:</td>
 				<td><textarea name="description" rows="8" cols="30"><?php echo $description;?></textarea></td>
 			</tr>
 			<tr>
